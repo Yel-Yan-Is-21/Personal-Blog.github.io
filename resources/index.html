@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Blog</title>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Remix icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- swiper css -->
+    <link rel="stylesheet" href="../vendors/external-css/swiper.bundle.min.css">
+    <!-- Normalize css -->
+    <link rel="stylesheet" href="../vendors/external-css/normalize.css">
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="./css/main.css">
+    <!-- query css -->
+   <link rel="stylesheet" href="./css/query.css"> 
+</head>
+<body>
+<!-- Header -->
+    <header class="header" id="header">
+
+        <nav class="navbar container">
+
+            <a href="./index.html">
+                <h2 class="logo">NewsFlash</h2>
+            </a>
+
+            <div class="menu" id="menu">
+                <ul class="list">
+                    <li class="list-item">
+                        <a href="#" class="list-link current">Home</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">Categories</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">Reviews</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">News</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">Membership</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">Contact</a>
+                    </li>
+                    <li class="list-item screen-lg-hidden">
+                        <a href="#" class="list-link">Sign In</a>
+                    </li>
+                    <li class="list-item screen-lg-hidden">
+                        <a href="#" class="list-link">Sign Up</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="list list-right">
+
+                <button class="btn place-items-center" id="theme-toggle-btn">
+                    <i class="ri-sun-line sun-icon"></i>
+                    <i class="ri-moon-line moon-icon"></i>
+                </button>
+
+                <button class="btn place-items-center" id="search-icon">
+                    <i class="ri-search-line"></i>
+                </button> 
+
+                <button class="btn place-items-center screen-lg-hidden menu-toggle-icon" id="menu-toggle-icon">
+                    <i class="ri-menu-3-line open-menu-icon"></i>
+                    <i class="ri-close-line close-menu-icon"></i>
+                </button>
+
+                <a href="#" class="list-link screen-sm-hidden">Sign In</a>
+                <a href="#" class="btn sign-up-btn fancy-border screen-sm-hidden">
+                    <span>Sign Up</span>    
+                </a>
+
+            </div>
+
+        </nav>
+
+    </header>
+<!-- Search -->
+    <div class="search-form-container container" id="search-form-container">
+
+        <div class="form-container-inner">
+            <form action="" class="form">
+                <input type="text" class="form-input" placeholder="What are looking for ?">
+                <button class="btn form-btn" type="submit">
+                    <i class="ri-search-line"></i>
+                </button>
+            </form>
+            <span class="form-note">Or press ESC to close</span>
+        </div>
+
+        <button class="btn form-close-btn place-items-center" id="form-close-btn">
+            <i class="ri-close-line"></i>
+        </button>
+
+    </div>
+<!-- Featured Article -->
+    <section class="featured-articles section-header-offset">
+
+        <div class="featured-articles-container container d-grid">
+
+            <div class="featured-content d-grid">
+                <div class="headline-banner">
+                    <h3 class="headline fancy-border">
+                        <span class="place-items-center">Breaking News</span>
+                    </h3>
+                    <span class="headline-description">Apple announces a new pathnership...</span>
+                </div>
+                <!-- first featured article 1 -->
+                <a href="./post.html" class="article featured-article featured-article-1">
+                    <img src="../images/featured/featured-1.jpg" alt="" class="article-image">
+                    <span class="article-category">Technology</span>
+
+                    <div class="article-data-container">
+                        <div class="article-data">
+                            <span>Dec 5th 2021</span>
+                            <span class="article-data-spacer spin"></span>
+                            <span>8 mins read</span>
+                        </div>
+                        <h3 class="title article-title">Is VR the future?</h3>
+                    </div>
+
+                </a>
+                <!-- second featured article 2 -->
+                <a href="./post.html" class="article featured-article featured-article-2">
+                    <img src="../images/featured/featured-2.jpg" alt="" class="article-image">
+                    <span class="article-category">Popular Restaurant</span>
+
+                    <div class="article-data-container">
+                        <div class="article-data">
+                            <span>August 3th 2021</span>
+                            <span class="article-data-spacer spin"></span>
+                            <span>10 mins read</span>
+                        </div>
+                        <h3 class="title article-title">Romantic place to chill with your love!</h3>
+                    </div>
+
+                </a>
+                <!-- third featured article 3 -->
+                <a href="./post.html" class="article featured-article featured-article-3">
+                    <img src="../images/featured/featured-3.jpg" alt="" class="article-image">
+                    <span class="article-category">Healthy Foods & Pills</span>
+
+                    <div class="article-data-container">
+                        <div class="article-data">
+                            <span>March 10th 2022</span>
+                            <span class="article-data-spacer spin"></span>
+                            <span>15 mins read</span>
+                        </div>
+                        <h3 class="title article-title">Health home tips for everyone</h3>
+                    </div>
+
+                </a>
+
+            </div>
+                    <!-- sidebar -->
+        <div class="sidebar d-grid">
+
+            <h3 class="title featured-content-title">Trending News</h3>
+            <!-- trending news box 1 -->
+            <a href="#" class="trending-news-box">
+                <div class="trending-news-image-box">
+                    <span class="trending-number place-items-center">01</span>
+                    <img src="../images/trending/trending_1.jpg" alt="" class="article-image">
+                </div>
+
+                <div class="trending-news-data">
+                    <div class="article-data">
+                        <span>Dec 5th 2021</span>
+                        <span class="article-data-spacer spin"></span>
+                        <span>8 mins read</span>
+                    </div>
+
+                    <h3 class="title article-title">Sample article title</h3>
+
+                </div>
+
+            </a>
+            <!-- trending news box 2 -->
+            <a href="#" class="trending-news-box">
+                <div class="trending-news-image-box">
+                    <span class="trending-number place-items-center">02</span>
+                    <img src="../images/trending/trending_2.jpg" alt="" class="article-image">
+                </div>
+
+                <div class="trending-news-data">
+                    <div class="article-data">
+                        <span>Jan 14th 2021</span>
+                        <span class="article-data-spacer spin"></span>
+                        <span>8 mins read</span>
+                    </div>
+
+                    <h3 class="title article-title">Sample article title</h3>
+
+                </div>
+
+            </a>
+            <!-- trending news box 3 -->
+            <a href="#" class="trending-news-box">
+                <div class="trending-news-image-box">
+                    <span class="trending-number place-items-center">03</span>
+                    <img src="../images/trending/trending_3.jpg" alt="" class="article-image">
+                </div>
+
+                <div class="trending-news-data">
+                    <div class="article-data">
+                        <span>April 24th 2021</span>
+                        <span class="article-data-spacer spin"></span>
+                        <span>8 mins read</span>
+                    </div>
+
+                    <h3 class="title article-title">Sample article title</h3>
+
+                </div>
+
+            </a>
+            <!-- trending news box 4 -->
+            <a href="#" class="trending-news-box">
+                <div class="trending-news-image-box">
+                    <span class="trending-number place-items-center">04</span>
+                    <img src="../images/trending/trending_4.jpg" alt="" class="article-image">
+                </div>
+
+                <div class="trending-news-data">
+                    <div class="article-data">
+                        <span>Nov 1th 2021</span>
+                        <span class="article-data-spacer spin"></span>
+                        <span>2 mins read</span>
+                    </div>
+
+                    <h3 class="title article-title">Sample article title</h3>
+
+                </div>
+
+            </a>
+            <!-- trending news box 5 -->
+            <a href="#" class="trending-news-box">
+                <div class="trending-news-image-box">
+                    <span class="trending-number place-items-center">05</span>
+                    <img src="../images/trending/trending_5.jpg" alt="" class="article-image">
+                </div>
+
+                <div class="trending-news-data">
+                    <div class="article-data">
+                        <span>Sep 11th 2021</span>
+                        <span class="article-data-spacer spin"></span>
+                        <span>8 mins read</span>
+                    </div>
+
+                    <h3 class="title article-title">Sample article title</h3>
+
+                </div>
+
+            </a>
+
+        </div>
+        </div>
+
+    </section>
+<!-- Quick Read -->
+    <section class="quick-read-section section">
+
+        <div class="container">
+
+            <h2 class="title section-title" data-name="quick-read">Quick Read</h2>
+
+            <div class="swiper">
+
+                <div class="swiper-wrapper">
+                    <!-- quick read 1 -->
+                    <a href="#" class="article swiper-slide">
+                        <img src="../images/quick-read/quick_read_1.jpg" alt="" class="article-image">
+
+                        <div class="article-data-container">
+                            <div class="article-data">
+                                <span>Dec 5th 2021</span>
+                                <span class="article-data-spacer spin"></span>
+                                <span>8 mins read</span>
+                            </div>
+                            <h3 class="title article-title">Is VR the future?</h3>
+                        </div>
+                    </a>
+                    <!-- quick read 2 -->
+                    <a href="#" class="article swiper-slide">
+                        <img src="../images/quick-read/quick_read_2.jpg" alt="" class="article-image">
+
+                        <div class="article-data-container">
+                            <div class="article-data">
+                                <span>Dec 5th 2021</span>
+                                <span class="article-data-spacer spin"></span>
+                                <span>8 mins read</span>
+                            </div>
+                            <h3 class="title article-title">Is VR the future?</h3>
+                        </div>
+                    </a>
+                    <!-- quick read 3 -->
+                    <a href="#" class="article swiper-slide">
+                        <img src="../images/quick-read/quick_read_3.jpg" alt="" class="article-image">
+
+                        <div class="article-data-container">
+                            <div class="article-data">
+                                <span>Dec 5th 2021</span>
+                                <span class="article-data-spacer spin"></span>
+                                <span>8 mins read</span>
+                            </div>
+                            <h3 class="title article-title">Is VR the future?</h3>
+                        </div>
+                    </a>
+                    <!-- quick read 4 -->
+                    <a href="#" class="article swiper-slide">
+                        <img src="../images/quick-read/quick_read_4.jpg" alt="" class="article-image">
+
+                        <div class="article-data-container">
+                            <div class="article-data">
+                                <span>Dec 5th 2021</span>
+                                <span class="article-data-spacer spin"></span>
+                                <span>8 mins read</span>
+                            </div>
+                            <h3 class="title article-title">Is VR the future?</h3>
+                        </div>
+                    </a>
+                    <!-- quick read 5 -->
+                    <a href="#" class="article swiper-slide">
+                        <img src="../images/quick-read/quick_read_5.jpg" alt="" class="article-image">
+
+                        <div class="article-data-container">
+                            <div class="article-data">
+                                <span>Dec 5th 2021</span>
+                                <span class="article-data-spacer spin"></span>
+                                <span>8 mins read</span>
+                            </div>
+                            <h3 class="title article-title">Is VR the future?</h3>
+                        </div>
+                    </a>
+                    <!-- quick read 6 -->
+                    <a href="#" class="article swiper-slide">
+                        <img src="../images/quick-read/quick_read_6.jpg" alt="" class="article-image">
+
+                        <div class="article-data-container">
+                            <div class="article-data">
+                                <span>Dec 5th 2021</span>
+                                <span class="article-data-spacer spin"></span>
+                                <span>8 mins read</span>
+                            </div>
+                            <h3 class="title article-title">Is VR the future?</h3>
+                        </div>
+                    </a>
+
+                </div>
+
+                <div class="swiper-button-prev swiper-controls"></div>
+                <div class="swiper-button-next swiper-controls"></div>
+
+                <div class="swiper-pagination"></div> 
+
+            </div>
+
+        </div>
+
+    </section>
+<!-- Older Post -->
+    <section class="older-posts section">
+
+        <div class="container">
+
+           <h2 class="title section-title" data-name="Older posts">Older Posts</h2>
+
+           <div class="older-posts-grid-wrapper d-grid">
+            <!-- older posts card 1 -->
+            <a href="#" class="article d-grid">
+                <div class="older-posts-article-image-wrapper">
+                    <img src="../images/older-posts/older_posts_1.jpg" alt="" class="article-image">
+                </div>
+
+                <div class="article-data-container">
+                    <div class="article-data">
+                        <span>Dec 5th 2021</span>
+                        <span class="article-data-spacer spin"></span>
+                        <span>8 mins read</span>
+                    </div>
+                    <h3 class="title article-title">Is VR the future?</h3>
+                    <p class="article-description">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit ad porro, hic magnam libero molestias sapiente voluptatem nihil optio minus.
+                    </p>
+                </div>
+            </a>
+            <!-- older posts card 2 -->
+            <a href="#" class="article d-grid">
+                <div class="older-posts-article-image-wrapper">
+                    <img src="../images/older-posts/older_posts_2.jpg" alt="" class="article-image">
+                </div>
+
+                <div class="article-data-container">
+                    <div class="article-data">
+                        <span>Dec 5th 2021</span>
+                        <span class="article-data-spacer spin"></span>
+                        <span>8 mins read</span>
+                    </div>
+                    <h3 class="title article-title">Is VR the future?</h3>
+                    <p class="article-description">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit ad porro, hic magnam libero molestias sapiente voluptatem nihil optio minus.
+                    </p>
+                </div>
+            </a>
+            <!-- older posts card 3 -->
+            <a href="#" class="article d-grid">
+                <div class="older-posts-article-image-wrapper">
+                    <img src="../images/older-posts/older_posts_3.jpg" alt="" class="article-image">
+                </div>
+
+                <div class="article-data-container">
+                    <div class="article-data">
+                        <span>Dec 5th 2021</span>
+                        <span class="article-data-spacer spin"></span>
+                        <span>8 mins read</span>
+                    </div>
+                    <h3 class="title article-title">Is VR the future?</h3>
+                    <p class="article-description">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit ad porro, hic magnam libero molestias sapiente voluptatem nihil optio minus.
+                    </p>
+                </div>
+            </a>
+            <!-- older posts card 4 -->
+            <a href="#" class="article d-grid">
+                <div class="older-posts-article-image-wrapper">
+                    <img src="../images/older-posts/older_posts_4.jpg" alt="" class="article-image">
+                </div>
+
+                <div class="article-data-container">
+                    <div class="article-data">
+                        <span>Dec 5th 2021</span>
+                        <span class="article-data-spacer spin"></span>
+                        <span>8 mins read</span>
+                    </div>
+                    <h3 class="title article-title">Is VR the future?</h3>
+                    <p class="article-description">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit ad porro, hic magnam libero molestias sapiente voluptatem nihil optio minus.
+                    </p>
+                </div>
+            </a>
+            <!-- older posts card 5 -->
+            <a href="#" class="article d-grid">
+                <div class="older-posts-article-image-wrapper">
+                    <img src="../images/older-posts/older_posts_5.jpg" alt="" class="article-image">
+                </div>
+
+                <div class="article-data-container">
+                    <div class="article-data">
+                        <span>Dec 5th 2021</span>
+                        <span class="article-data-spacer spin"></span>
+                        <span>8 mins read</span>
+                    </div>
+                    <h3 class="title article-title">Is VR the future?</h3>
+                    <p class="article-description">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit ad porro, hic magnam libero molestias sapiente voluptatem nihil optio minus.
+                    </p>
+                </div>
+            </a>
+            <!-- older posts card 6 -->
+            <a href="#" class="article d-grid">
+                <div class="older-posts-article-image-wrapper">
+                    <img src="../images/older-posts/older_posts_6.jpg" alt="" class="article-image">
+                </div>
+
+                <div class="article-data-container">
+                    <div class="article-data">
+                        <span>Dec 5th 2021</span>
+                        <span class="article-data-spacer spin"></span>
+                        <span>8 mins read</span>
+                    </div>
+                    <h3 class="title article-title">Is VR the future?</h3>
+                    <p class="article-description">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit ad porro, hic magnam libero molestias sapiente voluptatem nihil optio minus.
+                    </p>
+                </div>
+            </a>
+
+           </div>
+
+           <div class="see-more-container">
+               <a href="#" class="btn see-more-btn place-items-center">
+                   See More <i class="ri-arrow-right-s-line"></i>
+               </a>
+           </div>
+        </div>
+
+    </section>
+<!-- Popular tags -->
+    <section class="popular-tags section">
+
+        <div class="container">
+
+            <h2 class="title section-title" data-name="Popular Tags">Popular Tags</h2>
+
+            <div class="popular-tags-container d-grid">
+                <!-- tag card 1 -->
+                <a href="#" class="article">
+                    <span class="tag-name">#travel</span>
+                    <img src="../images/tags/travel-tag.jpg" alt="" class="article-image">
+                </a>
+                <!-- tag card 1 -->
+                <a href="#" class="article">
+                    <span class="tag-name">#health</span>
+                    <img src="../images/tags/health-tag.jpg" alt="" class="article-image">
+                </a>
+                <!-- tag card 1 -->
+                <a href="#" class="article">
+                    <span class="tag-name">#nature</span>
+                    <img src="../images/tags/nature-tag.jpg" alt="" class="article-image">
+                </a>
+                <!-- tag card 4 -->
+                <a href="#" class="article">
+                    <span class="tag-name">#fitness</span>
+                    <img src="../images/tags/fitness-tag.jpg" alt="" class="article-image">
+                </a>
+                <!-- tag card 5 -->
+                <a href="#" class="article">
+                    <span class="tag-name">#technology</span>
+                    <img src="../images/tags/technology-tag.jpg" alt="" class="article-image">
+                </a>
+                <!-- tag card 6 -->
+                <a href="#" class="article">
+                    <span class="tag-name">#food</span>
+                    <img src="../images/tags/food-tag.jpg" alt="" class="article-image">
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+<!-- Newsletter -->
+    <section class="newsletter section">
+        <div class="container">
+            
+            <h2 class="title section-title" data-name="newsletter">Newsletter</h2>
+
+            <div class="form-container-inner">
+                <h6 class="title newsletter-title">Subscribe To Newsflash</h6>
+
+                <p class="newsletter-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate aperiam neque sit delectus
+                </p>
+               
+                <form action="" class="form">
+                    <input type="text" class="form-input" placeholder="Enter Your Email">
+                    <button class="btn form-btn" type="submit">
+                        <i class="ri-mail-send-line"></i>
+                    </button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+<!-- Footer -->
+    <footer class="footer section">
+
+        <div class="footer-container container d-grid">
+
+            <div class="company-data">
+                <a href="./index.html">
+                    <h2 class="logo">NewsFlash</h2>
+                </a>
+                <p class="company-description">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque numquam atque natus recusandae molestiae?
+                </p>
+                <!-- social media link -->
+                <ul class="list social-media">
+                    <li class="list-item">
+                        <a href="#" class="list-link">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+                        <a href="#" class="list-link">
+                            <i class="ri-facebook-circle-line"></i>
+                        </a>
+                        <a href="#" class="list-link">
+                            <i class="ri-twitter-line"></i>
+                        </a>
+                        <a href="#" class="list-link">
+                            <i class="ri-github-line"></i>
+                        </a>
+                    </li>
+                </ul>
+
+                <span class="copyright-notice">&copy; 2022 Yel Yan All right reserved.</span>
+            </div>
+
+            <div>
+                <h6 class="title footer-title">Categories</h6>
+                <ul class="list footer-list">
+                    <li class="list-item">
+                        <a href="#" class="list-link">Travel</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">Food</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">Technology</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">Nature</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">Fitness</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h6 class="title footer-title">Useful Links</h6>
+                <ul class="list footer-list">
+                    <li class="list-item">
+                        <a href="#" class="list-link">Home</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">Elements</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">Tags</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">Sample item</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">Sample item</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h6 class="title footer-title">Company</h6>
+                <ul class="list footer-list">
+                    <li class="list-item">
+                        <a href="#" class="list-link">Sample item</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">Sample item</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">Sample item</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">Sample item</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">Sample item</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+
+    <!-- Swiper.js -->
+    <script src="../vendors/external-js/swiper-bundle.min.js"></script>
+    <!-- custom js -->
+    <script src="./Js/main.js"></script>
+</body>
+</html>
